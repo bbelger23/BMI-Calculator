@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>BMI Calculator</title>
+</head>
+<body>
+    <h1>BMI Calculator</h1>
+    <form>
+        <label for="height">Height (in inches)</label>
+        <input type="number" min="56" max="79" id="height" name="height" required="required">
+        <br>
+        <br>
+        <label for="weight">Weight (in pounds)</label>
+        <input type="text" min="80" max="275" id="weight" name="weight" required="required">
+        <br>
+        <br>
+        <input type="submit" name="Submit">
+    </form>
+    <br>
+    <span id="chart">
+        <img src="noun_person_5024.png" class="person">
+    </span>
+
+
+    <p>
+        <span class="bmimsg" id="cat1">Underweight (Severe thinness)</span>
+        <span class="bmimsg" id="cat2">Underweight (Moderate thinness)</span>
+        <span class="bmimsg" id="cat3">Underweight (Mild thinness)</span>
+        <span class="bmimsg" id="cat4">Normal range</span>
+        <span class="bmimsg" id="cat5">Overweight (Pre-obese)</span>
+        <span class="bmimsg" id="cat6">Overweight (Class I)</span>
+        <span class="bmimsg" id="cat7">Overweight (Class II)</span>
+        <span class="bmimsg" id="cat8">Overweight (Class III)</span>
+    </p>
+    <p id="bmi">
+
+    </p>
+
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous"></script>
+<script src="code.js"></script>
+</body>
+</html>
